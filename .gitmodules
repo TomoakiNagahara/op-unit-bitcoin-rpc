@@ -1,0 +1,3 @@
+[submodule "testcase"]
+	path = testcase
+	url = https://github.com/TomoakiNagahara/op-unit-bitcoin-testcase.git
