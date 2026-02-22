@@ -74,7 +74,9 @@ function Curl( string $method, array $params = [], string $wallet = '' ) : array
 
 	//	...
 	$json = json_decode($response, true);
-	D($json);
+	if(!OP()->isCI() ){
+		D($json);
+	}
 
 	//	...
 	return $json;
