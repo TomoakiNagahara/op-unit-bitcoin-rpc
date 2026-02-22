@@ -21,7 +21,6 @@ namespace OP;
  *
  */
 require_once(__DIR__.'/Bitcoin-RPC.class.php');
-require_once(__DIR__.'/function/Curl.php');
 
 //	...
-return new \OP\UNIT\BITCOIN\RPC();
+return true;
