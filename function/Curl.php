@@ -67,9 +67,9 @@ function Curl( string $method, array $params = [], string $wallet = '' ) : array
 		$response = curl_exec($ch);
 		curl_close($ch);
 	}else{
-		D('PHP curl extension does not loaded.');
-		$json     = json_encode($payload);
-		$response = shell_exec("curl --user {$username}:{$password} --data-binary '{$json}' -H 'content-type: text/plain;' {$URL}");
+	//	D('PHP curl extension does not loaded.');
+	//	$json     = json_encode($payload);
+		$response = shell_exec("curl -s --user {$username}:{$password} --data-binary '{$payload}' -H 'content-type: text/plain;' {$URL}");
 	}
 
 	//	...
